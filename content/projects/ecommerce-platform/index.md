@@ -70,26 +70,6 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - Database read replicas for improved query performance
 - Message queues for async processing (order emails, inventory updates)
 
-### Security
-- JWT authentication with refresh tokens
-- Rate limiting to prevent abuse
-- Input validation and sanitization
-- PCI-compliant payment processing via Stripe
-
-## Architecture
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  React SPA  │────▶│   REST API   │────▶│ PostgreSQL  │
-└─────────────┘     │  (Express)   │     └─────────────┘
-                    └──────┬───────┘
-                           │
-                    ┌──────▼───────┐
-                    │    Redis     │
-                    │   (Cache)    │
-                    └──────────────┘
-```
-
 ## Challenges & Solutions
 
 ### Challenge 1: Inventory Sync
@@ -160,8 +140,3 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 3. **Monitor Everything**: Proper logging and monitoring essential for maintaining uptime
 4. **User Feedback**: Regular user testing revealed UX issues we wouldn't have found otherwise
 
----
-
-**Project Status**: ✅ Live in Production  
-**GitHub**: [View Source Code](https://github.com/alexjohnson/ecommerce-platform)  
-**Demo**: [Try it Live](https://shop-demo.example.com)
